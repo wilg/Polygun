@@ -15,6 +15,15 @@
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
+        self.scene = [SCNScene scene];
+        
+        SCNNode *cameraNode = [SCNNode node];
+        cameraNode.camera = [SCNCamera camera];
+        
+        [self.scene.rootNode addChildNode:cameraNode];
+        
+        [self.scene.rootNode addChildNode:[SCNNode nodeWithGeometry:[SCNBox boxWithWidth:1 height:1 length:1 chamferRadius:0]]];
+        
     }
     return self;
 }
@@ -30,6 +39,7 @@
 {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+    sceneView.scene = self.scene;
 }
 
 + (BOOL)autosavesInPlace

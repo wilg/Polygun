@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PGDocument : NSDocument
+@interface PGDocument : NSDocument {
+    IBOutlet SCNView *sceneView;
+}
+
+@property SCNScene *scene;
 
 @end

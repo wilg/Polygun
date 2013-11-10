@@ -19,6 +19,7 @@
 		3B3454D018303E57002BD875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3454AC18303E57002BD875 /* Cocoa.framework */; };
 		3B3454D818303E57002BD875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3454D618303E57002BD875 /* InfoPlist.strings */; };
 		3B3454DA18303E57002BD875 /* PolygunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3454D918303E57002BD875 /* PolygunTests.m */; };
+		3B3454E418303F6B002BD875 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3454E318303F6B002BD875 /* SceneKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3B3454D518303E57002BD875 /* PolygunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PolygunTests-Info.plist"; sourceTree = "<group>"; };
 		3B3454D718303E57002BD875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B3454D918303E57002BD875 /* PolygunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolygunTests.m; sourceTree = "<group>"; };
+		3B3454E318303F6B002BD875 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3454E418303F6B002BD875 /* SceneKit.framework in Frameworks */,
 				3B3454AD18303E57002BD875 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +100,7 @@
 		3B3454AB18303E57002BD875 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B3454E318303F6B002BD875 /* SceneKit.framework */,
 				3B3454AC18303E57002BD875 /* Cocoa.framework */,
 				3B3454CE18303E57002BD875 /* XCTest.framework */,
 				3B3454AE18303E57002BD875 /* Other Frameworks */,
