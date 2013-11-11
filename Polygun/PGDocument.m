@@ -15,14 +15,7 @@
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
-        self.scene = [SCNScene scene];
-        
-        SCNNode *cameraNode = [SCNNode node];
-        cameraNode.camera = [SCNCamera camera];
-        
-        [self.scene.rootNode addChildNode:cameraNode];
-        
-        [self.scene.rootNode addChildNode:[SCNNode nodeWithGeometry:[SCNBox boxWithWidth:1 height:1 length:1 chamferRadius:0]]];
+        self.pgScene = [[PGScene alloc] init];
         
     }
     return self;
@@ -39,7 +32,8 @@
 {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
-    sceneView.scene = self.scene;
+    sceneView.scene = self.pgScene.scene;
+    NSLog(@"SCENE");
 }
 
 + (BOOL)autosavesInPlace
@@ -64,6 +58,16 @@
     NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
     @throw exception;
     return YES;
+}
+
+- (IBAction)setManipulationModeToTag:(id)sender {
+    NSLog(@"setManipulationModeToTag");
+    self.manipulationManager.manipulationMode = ((NSControl *)(sender)).tag;
+}
+
+- (IBAction)setSelectionModeToTag:(id)sender {
+    NSLog(@"setSelectionModeToTag");
+    self.manipulationManager.selectionMode = ((NSControl *)(sender)).tag;
 }
 
 @end

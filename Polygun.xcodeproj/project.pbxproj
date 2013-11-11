@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B32E6B418304531004BEDC7 /* PGScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B32E6B318304531004BEDC7 /* PGScene.m */; };
+		3B32E6B6183045EE004BEDC7 /* test.dae in Resources */ = {isa = PBXBuildFile; fileRef = 3B32E6B5183045EE004BEDC7 /* test.dae */; };
 		3B3454AD18303E57002BD875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3454AC18303E57002BD875 /* Cocoa.framework */; };
 		3B3454B718303E57002BD875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3454B518303E57002BD875 /* InfoPlist.strings */; };
 		3B3454B918303E57002BD875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3454B818303E57002BD875 /* main.m */; };
@@ -20,6 +22,9 @@
 		3B3454D818303E57002BD875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3454D618303E57002BD875 /* InfoPlist.strings */; };
 		3B3454DA18303E57002BD875 /* PolygunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3454D918303E57002BD875 /* PolygunTests.m */; };
 		3B3454E418303F6B002BD875 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3454E318303F6B002BD875 /* SceneKit.framework */; };
+		3B82A86918304D1F00CD65BF /* PGManipulationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A86818304D1F00CD65BF /* PGManipulationManager.m */; };
+		3B82A86C1830532700CD65BF /* PGIsOneTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A86B1830532700CD65BF /* PGIsOneTransformer.m */; };
+		673CF4F2EBF144C4939942B3 /* libPods-Polygun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D94A5EFDF24B2D8763CA63 /* libPods-Polygun.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15B777DFBA764AF896C62B1C /* Pods-Polygun.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polygun.xcconfig"; path = "Pods/Pods-Polygun.xcconfig"; sourceTree = "<group>"; };
+		36D94A5EFDF24B2D8763CA63 /* libPods-Polygun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Polygun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B32E6B218304531004BEDC7 /* PGScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGScene.h; sourceTree = "<group>"; };
+		3B32E6B318304531004BEDC7 /* PGScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGScene.m; sourceTree = "<group>"; };
+		3B32E6B5183045EE004BEDC7 /* test.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = test.dae; sourceTree = "<group>"; };
 		3B3454A918303E57002BD875 /* Polygun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polygun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3454AC18303E57002BD875 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3B3454AF18303E57002BD875 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -54,6 +64,10 @@
 		3B3454D718303E57002BD875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B3454D918303E57002BD875 /* PolygunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolygunTests.m; sourceTree = "<group>"; };
 		3B3454E318303F6B002BD875 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		3B82A86718304D1F00CD65BF /* PGManipulationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGManipulationManager.h; sourceTree = "<group>"; };
+		3B82A86818304D1F00CD65BF /* PGManipulationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGManipulationManager.m; sourceTree = "<group>"; };
+		3B82A86A1830532700CD65BF /* PGIsOneTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIsOneTransformer.h; sourceTree = "<group>"; };
+		3B82A86B1830532700CD65BF /* PGIsOneTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIsOneTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 			files = (
 				3B3454E418303F6B002BD875 /* SceneKit.framework in Frameworks */,
 				3B3454AD18303E57002BD875 /* Cocoa.framework in Frameworks */,
+				673CF4F2EBF144C4939942B3 /* libPods-Polygun.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				3B3454D318303E57002BD875 /* PolygunTests */,
 				3B3454AB18303E57002BD875 /* Frameworks */,
 				3B3454AA18303E57002BD875 /* Products */,
+				15B777DFBA764AF896C62B1C /* Pods-Polygun.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,7 @@
 				3B3454AC18303E57002BD875 /* Cocoa.framework */,
 				3B3454CE18303E57002BD875 /* XCTest.framework */,
 				3B3454AE18303E57002BD875 /* Other Frameworks */,
+				36D94A5EFDF24B2D8763CA63 /* libPods-Polygun.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,12 +138,19 @@
 		3B3454B218303E57002BD875 /* Polygun */ = {
 			isa = PBXGroup;
 			children = (
+				3B32E6B5183045EE004BEDC7 /* test.dae */,
 				3B3454BE18303E57002BD875 /* PGDocument.h */,
 				3B3454BF18303E57002BD875 /* PGDocument.m */,
 				3B3454C118303E57002BD875 /* PGDocument.xib */,
 				3B3454C418303E57002BD875 /* MainMenu.xib */,
 				3B3454C718303E57002BD875 /* Images.xcassets */,
 				3B3454B318303E57002BD875 /* Supporting Files */,
+				3B32E6B218304531004BEDC7 /* PGScene.h */,
+				3B32E6B318304531004BEDC7 /* PGScene.m */,
+				3B82A86718304D1F00CD65BF /* PGManipulationManager.h */,
+				3B82A86818304D1F00CD65BF /* PGManipulationManager.m */,
+				3B82A86A1830532700CD65BF /* PGIsOneTransformer.h */,
+				3B82A86B1830532700CD65BF /* PGIsOneTransformer.m */,
 			);
 			path = Polygun;
 			sourceTree = "<group>";
@@ -168,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B3454DD18303E57002BD875 /* Build configuration list for PBXNativeTarget "Polygun" */;
 			buildPhases = (
+				970BB8EB8EA44F709A70DA00 /* Check Pods Manifest.lock */,
 				3B3454A518303E57002BD875 /* Sources */,
 				3B3454A618303E57002BD875 /* Frameworks */,
 				3B3454A718303E57002BD875 /* Resources */,
+				55A9D613CC7B42A98316E0D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +266,7 @@
 			files = (
 				3B3454B718303E57002BD875 /* InfoPlist.strings in Resources */,
 				3B3454C818303E57002BD875 /* Images.xcassets in Resources */,
+				3B32E6B6183045EE004BEDC7 /* test.dae in Resources */,
 				3B3454C318303E57002BD875 /* PGDocument.xib in Resources */,
 				3B3454BD18303E57002BD875 /* Credits.rtf in Resources */,
 				3B3454C618303E57002BD875 /* MainMenu.xib in Resources */,
@@ -256,12 +283,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55A9D613CC7B42A98316E0D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Polygun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970BB8EB8EA44F709A70DA00 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B3454A518303E57002BD875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3B3454B918303E57002BD875 /* main.m in Sources */,
+				3B82A86918304D1F00CD65BF /* PGManipulationManager.m in Sources */,
+				3B82A86C1830532700CD65BF /* PGIsOneTransformer.m in Sources */,
+				3B32E6B418304531004BEDC7 /* PGScene.m in Sources */,
 				3B3454C018303E57002BD875 /* PGDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +461,7 @@
 		};
 		3B3454DE18303E57002BD875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B777DFBA764AF896C62B1C /* Pods-Polygun.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -411,6 +475,7 @@
 		};
 		3B3454DF18303E57002BD875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B777DFBA764AF896C62B1C /* Pods-Polygun.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -481,6 +546,7 @@
 				3B3454DF18303E57002BD875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B3454E018303E57002BD875 /* Build configuration list for PBXNativeTarget "PolygunTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +555,7 @@
 				3B3454E218303E57002BD875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

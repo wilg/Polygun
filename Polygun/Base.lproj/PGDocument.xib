@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PGDocument">
             <connections>
+                <outlet property="manipulationManager" destination="gmc-3N-dCa" id="gqi-xF-P7y"/>
                 <outlet property="sceneView" destination="rYk-y2-2C2" id="YXg-QR-8rc"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
@@ -14,38 +15,84 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="696" height="484"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="696" height="484"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView loops="YES" autoenablesDefaultLighting="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYk-y2-2C2">
+                    <sceneView sceneName="" loops="YES" autoenablesDefaultLighting="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYk-y2-2C2">
                         <rect key="frame" x="0.0" y="0.0" width="696" height="484"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                     </sceneView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rYk-y2-2C2" firstAttribute="top" secondItem="6" secondAttribute="top" id="LRQ-yt-O60"/>
-                    <constraint firstItem="rYk-y2-2C2" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="agY-Do-nN1"/>
-                    <constraint firstAttribute="trailing" secondItem="rYk-y2-2C2" secondAttribute="trailing" id="dYt-gV-CVk"/>
-                    <constraint firstAttribute="bottom" secondItem="rYk-y2-2C2" secondAttribute="bottom" id="wFu-U7-H8J"/>
+                    <constraint firstAttribute="bottom" secondItem="rYk-y2-2C2" secondAttribute="bottom" id="kPs-BM-10v"/>
+                    <constraint firstItem="rYk-y2-2C2" firstAttribute="top" secondItem="6" secondAttribute="top" id="khR-xG-3nQ"/>
+                    <constraint firstItem="rYk-y2-2C2" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="kxY-LU-3oF"/>
+                    <constraint firstAttribute="trailing" secondItem="rYk-y2-2C2" secondAttribute="trailing" id="uMU-NI-o4y"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="C1ABD868-8C88-456B-A9FB-228385033603" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="u5Q-mb-tbD">
+            <toolbar key="toolbar" implicitIdentifier="C1ABD868-8C88-456B-A9FB-228385033603" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="u5Q-mb-tbD">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="80808D0F-E6DB-4970-8CD7-7342C8C81506" label="+ Cube" paletteLabel="+ Cube" tag="-1" id="h8l-ns-gra"/>
-                    <toolbarItem implicitItemIdentifier="1F07899F-DF41-45E1-9A6B-2857BAE66A3A" label="+ Sphere" paletteLabel="+ Sphere" tag="-1" id="4CK-ZL-AIK"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="elb-3W-u7z"/>
+                    <toolbarItem implicitItemIdentifier="80808D0F-E6DB-4970-8CD7-7342C8C81506" label="+ Cube" paletteLabel="+ Cube" tag="-1" image="NSApplicationIcon" id="h8l-ns-gra"/>
+                    <toolbarItem implicitItemIdentifier="1F07899F-DF41-45E1-9A6B-2857BAE66A3A" label="+ Sphere" paletteLabel="+ Sphere" tag="-1" image="NSApplicationIcon" id="4CK-ZL-AIK"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="QhT-dh-9Eg"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="elb-3W-u7z"/>
+                    <toolbarItem implicitItemIdentifier="92EF299F-3D8C-4DE5-A5C5-D2DFE1CE494E" label="Selection Mode" paletteLabel="Selection Mode" id="Ggt-Fb-O7G">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="226" height="25"/>
+                        <size key="maxSize" width="230" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="HG8-Mh-GeO">
+                            <rect key="frame" x="0.0" y="14" width="226" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedSquare" trackingMode="selectOne" id="50p-RJ-P8C">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="Vertex" selected="YES"/>
+                                    <segment label="Edge" tag="1"/>
+                                    <segment label="Face"/>
+                                    <segment label="Object"/>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <binding destination="gmc-3N-dCa" name="selectedIndex" keyPath="selectionMode" id="fOV-yB-im5"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="FF8AC83A-A0CA-4BB6-BAFE-32A90B0FD5E9" label="Manipulation Mode" paletteLabel="Manipulation Mode" id="PTh-6s-E3S">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="212" height="25"/>
+                        <size key="maxSize" width="230" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="3Vb-pO-1DH">
+                            <rect key="frame" x="0.0" y="14" width="214" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedSquare" trackingMode="selectOne" id="Omf-Sk-mFX">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="Pan" selected="YES"/>
+                                    <segment label="Move" tag="1"/>
+                                    <segment label="Rotate"/>
+                                    <segment label="Scale"/>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <binding destination="gmc-3N-dCa" name="selectedIndex" keyPath="manipulationMode" id="YMz-f4-t6B"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
+                    <toolbarItem reference="Ggt-Fb-O7G"/>
+                    <toolbarItem reference="PTh-6s-E3S"/>
+                    <toolbarItem reference="QhT-dh-9Eg"/>
+                    <toolbarItem reference="QhT-dh-9Eg"/>
                     <toolbarItem reference="h8l-ns-gra"/>
                     <toolbarItem reference="4CK-ZL-AIK"/>
-                    <toolbarItem reference="QhT-dh-9Eg"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>
@@ -53,5 +100,10 @@
             </connections>
         </window>
         <customObject id="-3" userLabel="Application"/>
+        <customObject id="gmc-3N-dCa" customClass="PGManipulationManager"/>
+        <userDefaultsController representsSharedInstance="YES" id="heT-XE-KTn"/>
     </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
 </document>

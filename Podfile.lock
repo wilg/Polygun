@@ -1,0 +1,10 @@
+PODS:
+  - TransformerKit (0.2.4)
+
+DEPENDENCIES:
+  - TransformerKit
+
+SPEC CHECKSUMS:
+  TransformerKit: 3c60759694b70d41b833dfe4005b031762d54e7f
+
+COCOAPODS: 0.27.1
